@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Nav</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="slider">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" >
+    </div>
+
+    <nav class="slider-nav">
+        <ul>
+
+            <li class="arrow">
+                <a href="#">←</a>
+            </li>
+
+            <li>
+                <a href="#">Add a CLI to Node Apps with Vantage</a>
+            </li>
+
+            <li>
+                <a href="#">NewSprint, Spectacle</a>
+            </li>
+
+            <li>
+                <a href="#">Small Modules: Tales from a Serial Module Author</a>
+            </li>
+
+            <li>
+                <a href="#">The End</a>
+            </li>
+
+            <li class="arrow">
+                <a href="#">→</a>
+            </li>
+
+        </ul>
+    </nav>
+
+</div>
+</body>
+</html>
+
+<style>
+    /* Some CSS Setup - nothing to do with flexbox */
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    }
+
+    .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding:50px;
+    }
+
+    img {
+        max-width:100%;
+    }
+
+    a {
+        color:white;
+        text-decoration: none;
+        font-size: 15px;
+        background:rgba(0,0,0,0.2);
+        padding:20px 5px;
+    }
+    a:hover {
+        background:rgba(0,0,0,0.4);
+    }
+
+    .slider-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .slider-nav li {
+        flex: 2;
+        text-align: center;
+        display: flex;
+    }
+
+    .slider-nav .arrow {
+        flex: 1
+    }
+
+    .slider-nav a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+</style>
